@@ -1,0 +1,49 @@
+@use '../../styles/variables.scss' as v;
+
+.board{
+    width: 300px;
+    height: 360px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 20px;
+
+    .box{
+        border: 2px solid #d3d6da;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+        font-weight: bold;
+        vertical-align: middle;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .green{
+        background-color: #6aaa64;
+        border: none !important;
+    }
+    
+    .yellow{
+        background-color: #C9B458;
+        border: none !important;
+    }
+    
+    .black{
+        background-color: #787c7e;
+        border: none !important;
+    }
+
+    .black-font{
+        color: black;
+    }
+
+    
+}

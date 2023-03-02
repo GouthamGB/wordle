@@ -1,0 +1,70 @@
+@use '../styles/variables.scss';
+
+.keyrow{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+    .key{
+        height: 58px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-weight: bold;
+        background-color: #D3D6DA;
+        border-radius: 4px;
+        
+    }
+    .bigKey{
+        height: 58px;
+        background-color: #D3D6DA;
+        padding: 0px 20px 0px 20px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: black;
+        background-color: #D3D6DA;
+        border-radius: 4px;
+        
+
+    }
+
+    .green{
+        background-color: #6aaa64;
+    }
+    .yellow{
+        background-color: #C9B458;
+    }
+    .black{
+        background-color: #787c7e;
+    }
+
+    .fontWhite{
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .keyrow{
+        .key{
+            height: 45px;
+            width: 30px;
+        }
+
+        .bigKey{
+            height: 45px;
+            background-color: #D3D6DA;
+            padding: 0px 20px 0px 20px;
+    
+            
+    
+        }
+    }
+
+    
+}
+
